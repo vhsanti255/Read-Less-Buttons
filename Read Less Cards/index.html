@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Read Less Button</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="./assets/img/comppic.png" alt="comp" width="200px" height="200px">
+            </div>
+            <div class="content">
+                <h3>Mobile and Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo explicabo, nisi minima architecto quidem mollitia. Perferendis, minima! Voluptatem placeat repudiandae vero quo. In, recusandae sed quia aliquam accusamus quaerat. Aliquid inventore culpa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta temporibus rerum eius. Sit labore tempora vitae nam sint? Iusto ex ipsa debitis facilis est velit dolores magni, modi cumque?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./assets/img/talkto.png" alt="talk" width="200px" height="200px">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo explicabo, nisi minima architecto quidem mollitia. Perferendis, minima! Voluptatem placeat repudiandae vero quo. In, recusandae sed quia aliquam accusamus quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, corrupti at! Tenetur voluptas deleniti rerum porro, similique modi sequi dolorum sed perferendis molestiae eveniet labore ipsum laboriosam officiis in numquam!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="./assets/img/saysmthg.png" alt="microphone" width="200px" height="200px">
+            </div>
+            <div class="content">
+                <h3>Marketing and Communication</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo explicabo, nisi minima architecto quidem mollitia. Perferendis, minima! Voluptatem placeat repudiandae vero quo. In, recusandae sed quia aliquam accusamus quaerat. Aliquid inventore culpa quibusdam. Adipisci aspernatur vero tempora mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate architecto doloremque libero possimus voluptatum nostrum quia sapiente facilis corrupti, iusto excepturi temporibus quam inventore, accusantium hic. Sed aliquid architecto modi!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i<more.length; i++) {
+            more[i].addEventListener('click', function(){
+                more[i].parentNode.classList.toggle('active')
+            })
+        } 
+    </script>
+</body>
+</html>
